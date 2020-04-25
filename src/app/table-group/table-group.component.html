@@ -1,0 +1,12 @@
+<ag-grid-angular
+    #agGrid
+    style="height:600px;"
+    class="ag-theme-alpine"
+    [autoGroupColumnDef]="autoGroupColumnDef"
+    [groupSelectsChildren]="true"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    *ngIf="rowData && rowData.length > 0"
+    >
+</ag-grid-angular>
+

@@ -1,0 +1,19 @@
+<ag-grid-angular
+    style="height:600px;"
+    class="ag-theme-alpine"
+    [defaultColDef]="defaultColDef"
+    [getRowHeight]="getRowHeight"
+    [pinnedTopRowData]="pinnedTopRowData"
+    [pinnedBottomRowData]="pinnedBottomRowData"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [pagination]="true"
+    [paginationPageSize]="paginationPageSize"
+    [cacheBlockSize]="cacheBlockSize"
+    [animateRows]="true"
+    [enableCharts]="true"
+    [processChartOptions]="processChartOptions"
+    rowSelection="multiple"
+    *ngIf="rowData && rowData.length > 0"
+    >
+</ag-grid-angular>
